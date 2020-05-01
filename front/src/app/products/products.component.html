@@ -1,0 +1,40 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Products</h1>
+  <mat-grid-list cols="1" rowHeight="160px">
+    <mat-grid-tile
+      *ngFor="let product of pagedProducts"
+      [colspan]="1"
+      [rowspan]="1"
+    >
+      <mat-card
+        class="item-card"
+        [ngClass]="{ 'paid-promotion': product?.paidPromotion }"
+      >
+        <div class="item-title">
+          <span class="mat-h1">{{ product?.name }}</span
+          ><span class="mat-h2" *ngIf="product?.paidPromotion">PROMOTED</span>
+        </div>
+        <mat-card-content class="item-content">
+          <div>Buy today for only {{ product?.price }}$</div>
+          <div class="item-actions">
+            <button mat-flat-button color="accent">
+              <span class="material-icons">
+                shopping_cart
+              </span>
+            </button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-card class="paginator">
+    <mat-paginator
+      [length]="products?.length"
+      [pageSize]="pageSize"
+      hidePageSize="true"
+      showFirstLastButtons="true"
+      (page)="pageChanged($event)"
+    >
+    </mat-paginator>
+  </mat-card>
+</div>

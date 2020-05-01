@@ -1,0 +1,45 @@
+.grid-container {
+  margin: 20px;
+  position: relative;
+  height: calc(100% - 64px - 40px);
+}
+
+.item-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.paid-promotion {
+  background-color: goldenrod;
+}
+
+.item-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  button {
+    width: 106px;
+  }
+}
+
+.paginator {
+  padding: 5px !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

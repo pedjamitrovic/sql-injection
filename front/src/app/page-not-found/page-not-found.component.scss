@@ -1,0 +1,10 @@
+.pnf-container {
+  margin: 20px;
+  height: calc(100% - 64px - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .mat-card {
+    text-align: center;
+  }
+}
