@@ -28,6 +28,18 @@
   justify-content: space-between;
 }
 
+.page-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .mat-form-field {
+    width: 30vw;
+  }
+  button {
+    margin-left: 10px;
+  }
+}
+
 .item-actions {
   width: 100%;
   display: flex;

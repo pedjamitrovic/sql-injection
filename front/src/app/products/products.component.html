@@ -1,5 +1,14 @@
 <div class="grid-container">
-  <h1 class="mat-h1">Products</h1>
+  <div class="page-title">
+    <span class="mat-h1">Products</span>
+    <form [formGroup]="searchForm" autocomplete="off">
+      <mat-form-field color="accent">
+          <mat-label>Name</mat-label>
+          <input matInput [formControl]="searchForm?.controls?.name">
+      </mat-form-field>
+      <button class="mat-elevation-z3" mat-raised-button color="primary" (click)="search()">SEARCH</button>
+    </form>
+  </div>
   <mat-grid-list cols="1" rowHeight="160px">
     <mat-grid-tile
       *ngFor="let product of pagedProducts"
@@ -17,7 +26,7 @@
         <mat-card-content class="item-content">
           <div>Buy today for only {{ product?.price }}$</div>
           <div class="item-actions">
-            <button mat-flat-button color="accent">
+            <button mat-flat-button color="accent" class="mat-elevation-z3">
               <span class="material-icons">
                 shopping_cart
               </span>

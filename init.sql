@@ -62,6 +62,6 @@ insert into orders(buyerId, productId, price, count, firstName, lastName, addres
 insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (4, 1, 200, 5, 'Momčilo', 'Nikolić', 'Bulevar kralja Aleksandra 105/3', '063333444');
 insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (1, 3, 400, 3, 'Predrag', 'Mitrović', 'Bulevar kralja Aleksandra 205', '0631122334');
 
-insert into reviews(productId, username, review, rating) values(1, 'user1', 'Best product');
-insert into reviews(productId, username, review, rating) values(1, 'user2', 'Worst product ever');
-insert into reviews(productId, username, review, rating) values(1, 'user3', 'Ok, nothing special');
+insert into reviews(productId, username, review) values(1, 'user1', 'Best product');
+insert into reviews(productId, username, review) values(1, 'user2', 'Worst product ever');
+insert into reviews(productId, username, review) values(1, 'user3', 'Ok, nothing special');

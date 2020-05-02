@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
-import { of } from 'rxjs';
-import { Product } from './model/product';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SqliClientService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getProducts() {
-    return Product.Mock();
+  getProducts(name: string) {
+    return this.http.get('/api/v1/products', {params: {name}});
   }
 }

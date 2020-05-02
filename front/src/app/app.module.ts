@@ -17,6 +17,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -39,7 +44,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MatCardModule,
     MatMenuModule,
     MatPaginatorModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
