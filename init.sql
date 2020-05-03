@@ -57,10 +57,10 @@ insert into products(sellerId, name, price, paidPromotion) values (2, 'Intel i7 
 insert into products(sellerId, name, price, paidPromotion) values (3, 'Acer Aspire laptop', 900, true);
 insert into products(sellerId, name, price, paidPromotion) values (4, 'Logitech tastatura', 50, false);
 
-insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (2, 1, 200, 12, 'Vladimir', 'Sivčev', 'Bulevar kralja Aleksandra 48/5', '063123456');
-insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (3, 1, 200, 7, 'Miodrag', 'Milošević', 'Bulevar kralja Aleksandra 12/16', '064987654');
-insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (4, 1, 200, 5, 'Momčilo', 'Nikolić', 'Bulevar kralja Aleksandra 105/3', '063333444');
-insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (1, 3, 400, 3, 'Predrag', 'Mitrović', 'Bulevar kralja Aleksandra 205', '0631122334');
+insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (2, 1, 200, 12, 'Pera', 'Peric', 'Bulevar kralja Aleksandra 48/5', '063123456');
+insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (3, 1, 200, 7, 'Mika', 'Mikic', 'Bulevar kralja Aleksandra 12/16', '064987654');
+insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (4, 1, 200, 5, 'Jova', 'Jovic', 'Bulevar kralja Aleksandra 105/3', '063333444');
+insert into orders(buyerId, productId, price, count, firstName, lastName, address, contactPhone) values (1, 3, 400, 3, 'Zika', 'Zikic', 'Bulevar kralja Aleksandra 205', '0631122334');
 
 insert into reviews(productId, username, review) values(1, 'user1', 'Best product');
 insert into reviews(productId, username, review) values(1, 'user2', 'Worst product ever');
